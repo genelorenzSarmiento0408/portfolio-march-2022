@@ -7,11 +7,17 @@
 }
 
 .image {
-  width: 120%;
-  max-width: 120%;
+  border: 1px solid hsl(0, 0%, 0%);
+  min-width: 80%;
+  max-width: 100%;
   height: auto;
   object-fit: cover;
-  object-position: center;
+  /* object-position: center; */
+}
+.img_container {
+  display: flex;
+  justify-content: center;
+  border: 5px solid hsl(28, 94%, 43%);
 }
 .info {
   font-family: "Comfortaa", sans-serif;
@@ -19,20 +25,11 @@
   margin-left: auto;
 }
 .squigle {
-  position: relative;
-  text-align: center;
-  color: inherit;
+  background: url("../public/images/squigle.png");
 }
 .shape {
   width: 90%;
   height: auto;
-}
-.centerTextOld {
-  display: flex;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 .learnMore {
   background: #3f4dc8;
@@ -138,7 +135,7 @@
   margin-left: 0.5rem;
 }
 
-@media (max-width: 865px) {
+@media (max-width: 1100px) {
   .grid {
     width: 100%;
     flex-direction: column;
@@ -147,6 +144,6 @@
     flex-direction: column;
   }
   .image {
-    width: 100%;
+    width: 50%;
   }
 }

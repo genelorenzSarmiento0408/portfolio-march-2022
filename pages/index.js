@@ -16,17 +16,13 @@ export default function Home() {
       </Head>
       <Navbar />
       <main className={styles.main}>
-        <div>
+        <div className={styles.img_container}>
           <img src="/image 1.png" alt="image 1" className={styles.image} />
         </div>
         <div className={styles.info}>
           <div className={styles.squigle}>
-            <img src="/Ellipse 1.png" className={styles.shape} />
-            <div className={styles.centerTextOld}>
-              Hi! Im Gene Lorenz Sarmiento. I'm a Student, and a Programmer. I'm
-              currently a grade 8 student and learning front-end web
-              development.
-            </div>
+            Hi! Im Gene Lorenz Sarmiento. I'm a Student, and a Programmer. I'm
+            currently a grade 8 student and learning front-end web development.
           </div>
           <button className={styles.learnMore}>Learn more</button>
         </div>
